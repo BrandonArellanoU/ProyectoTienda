@@ -1,0 +1,178 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!-- Encabezado -->
+<div class="text-center">
+    <img style="height: 300px;width:900px" src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2020/10/9/iroyksbd0aakpa0lstpf/vans-park-series" alt="Logo Tienda Skate">
+    </div>
+
+<!-- Sección principal -->
+<section class="hero">
+    <h1>A nosotros también nos gusta el Skate!</h1>
+    <p>Todo lo que buscar para hacer skate</p>
+    <button>Compra</button>
+</section>
+
+<!-- Apartado de Noticias -->
+<section id="noticias">
+    <h2>Últimas Noticias</h2>
+    <div class="noticias-grid">
+        <article>
+            <h3>Competencia</h3>
+            <p>
+                La primera competencia de skateboarding considerada profesional tuvo lugar en 1965 en Anaheim, California, y fue organizada por la Asociación Nacional de Skateboarding (NSA). En este evento, los participantes compitieron en varias categorías, como slalom, estilo libre y downhill, utilizando tablas con ruedas de arcilla, las mejores disponibles en ese momento. Aunque el skate era un deporte relativamente nuevo y sin muchos trucos, este evento marcó un hito al formalizar la competencia y atraer la atención del público y los medios.
+
+                El evento ayudó a legitimar el skateboarding como deporte, y aunque la popularidad del skate decayó a finales de los 60, esta competencia fue la primera en abrir el camino hacia competiciones futuras y el desarrollo del skateboarding profesional.
+
+            </p>
+        </article>
+        <article>
+            <h3>En el Ecuador</h3>
+            <p>En Ecuador, el skateboarding ha crecido de forma significativa en las últimas décadas, especialmente en ciudades como Quito, Guayaquil y Cuenca. Existen varios skateparks en estas ciudades, impulsados tanto por el interés de los jóvenes como por el apoyo de gobiernos locales que buscan ofrecer espacios recreativos. El skateboarding ecuatoriano está en constante evolución, con una comunidad apasionada y eventos que, aunque modestos, promueven la competencia y la cultura skate a nivel nacional</p>
+        </article>
+    </div>
+</section>
+
+<!-- Apartado de Ofertas -->
+<section id="ofertas">
+    <h2>Ofertas Especiales</h2>
+    <div class="ofertas-grid">
+        <div class="oferta">
+            <img style="height: 100px;width:100px" src="https://www.skatefactory.com.mx/cdn/shop/files/11116726_800x.jpg?v=1711999913" alt="Producto en oferta">
+            <p>Producto con descuento</p>
+            <span>$25.00 USD</span>
+        </div>
+        <div class="oferta">
+            <img style="height: 100px;width:100px" src="https://m.media-amazon.com/images/I/71d7XyxJIzL.jpg" alt="Producto en oferta">
+            <p>Producto en oferta</p>
+            <span>$30.00 USD</span>
+        </div>
+    </div>
+</section>
+
+
+<section id="productos">
+    <h2>Catálogo de Productos</h2>
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <!-- Contenedor de los productos (items) -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="producto text-center">
+                    <img src="/img/Bronson.jpeg" alt="Truck Venture" style="width: 150px; height: 150px;">
+                    <p>Truck Venture</p>
+                    <span>$45.00 USD</span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="producto text-center">
+                    <img src="/img/inde.jpeg" alt="Trucks Independent" style="width: 150px; height: 150px;">
+                    <p>Trucks Independent</p>
+                    <span>$52.00 USD</span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="producto text-center">
+                    <img src="/img/Grizzly.jpeg" alt="Lija Grizzly" style="width: 150px; height: 150px;">
+                    <p>Lija Grizzly</p>
+                    <span>$5.00 USD</span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="producto text-center">
+                    <img src="/img/Ricta.jpeg" alt="Ruedas Ricta" style="width: 150px; height: 150px;">
+                    <p>Ruedas Ricta</p>
+                    <span>$9.00 USD</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+
+<section id="productos" class="container my-5">
+    <h2 class="text-center mb-4">Catálogo de Productos</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Producto 1 -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="/img/Bronson.jpeg" class="card-img-top" alt="Bronson Venture" style="width: 100%; height: 150px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Truck Venture</h5>
+                    <p class="card-text text-dark">$45.00 USD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="/img/inde.jpeg" class="card-img-top" alt="Trucks Independent" style="width: 100%; height: 150px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Trucks Independent</h5>
+                    <p class="card-text text-dark">$52.00 USD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="/img/Grizzly.jpeg" class="card-img-top" alt="Lija Grizzly" style="width: 100%; height: 150px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Lija Grizzly</h5>
+                    <p class="card-text text-dark">$5.00 USD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="/img/Ricta.jpeg" class="card-img-top" alt="Ruedas Ricta" style="width: 100%; height: 150px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Ruedas Ricta</h5>
+                    <p class="card-text text-dark">$9.00 USD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Apartado Conócenos -->
+<section id="conocenos">
+    <h2>¿Cómo se inició?</h2>
+    <p>
+        El skateboarding comenzó en California en la década de 1950, cuando surfistas buscaban una alternativa para "montar olas" en el asfalto cuando no había olas en el mar. Empezaron creando "surfboards de asfalto" improvisadas, colocando ruedas de patines en tablas de madera. Al principio, el skate era un pasatiempo sencillo que imitaba los movimientos del surf, pero fue evolucionando rápidamente con el desarrollo de las primeras tablas comerciales y el uso de ruedas de arcilla.
+
+        En los años 60, el skate se popularizó, y en los 70 experimentó un boom con la creación de ruedas de poliuretano, que permitieron mayor velocidad y agarre. Este avance llevó a la invención de nuevos trucos y a la exploración de terrenos como piscinas vacías en las que los skaters empezaron a hacer acrobacias, marcando el inicio del estilo "vert" (vertical). A lo largo de los años, el skateboarding se transformó en un deporte extremo con múltiples estilos y disciplinas, y se convirtió en un fenómeno cultural global.
+
+
+    </p>
+</section>
+
+<!-- Ubicación -->
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+    <img style=" width: 1000px "src="/img/maps.png" alt="Mapa de ubicación de la tienda">
+</section>

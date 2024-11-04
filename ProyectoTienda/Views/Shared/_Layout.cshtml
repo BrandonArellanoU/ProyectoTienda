@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SkateUdla</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ProyectoTienda.styles.css" asp-append-version="true" />
+    
+    <style>
+        /* Fondo oscuro para toda la página */
+        body {
+            background-color: #121212;
+            color: #ffffff; /* Texto en color blanco para mejor contraste */
+        }
+
+        /* Estilos para la barra de navegación */
+        .navbar {
+            background-color: #1e1e1e !important; /* Fondo oscuro en la navbar */
+            border-bottom: none;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* Texto en blanco para los enlaces */
+        }
+
+        .navbar .nav-link:hover {
+            color: #4CAF50 !important; /* Color de enlace al pasar el cursor */
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        /* Botón de alternar para el menú en dispositivos pequeños */
+        .navbar-toggler {
+            border-color: #ffffff;
+        }
+
+        /* Color del icono del menú al ser presionado */
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28155, 155, 155, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <img style="height: 75px;width:75px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YBH7qrhfTCnIXcSAmP2gRDR4nUX50GjFyA&s" alt="Logo">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SkateUdla</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Productos</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Registrate</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - ProyectoTienda - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
